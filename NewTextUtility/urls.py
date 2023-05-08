@@ -19,5 +19,22 @@ from . import views
 
 urlpatterns = [
     path('' , views.index ,  name='Index'),
-    path('index', views.next, name='operations')
+    path('uppercase', views.uppercase, name='UPPERCASE'),
+    path('lowercase', views.lowercase, name='lowercase'),
+    path('remove', views.remove, name='remove'),
+    path('removepunc', views.removepunc, name='removepunc'),
+    path('extraspaces', views.extraspaces, name='extraspace'),
+    path('wordcount', views.wordscount, name='wordscount'),
+    path('replace', views.replace, name='replace'),
+    path('about', views.about, name='about'),
+    
+
+
+    path('UPPERCASE', views.an_uppercase, name='UPPERCASE'),
+    path('LOWERCASE', views.an_lowercase, name='LOWERCASE'),
+    path('REMOVE', views.an_remove, name='REMOVE'),
+    path('REMOVEPUNC', views.an_removepunc, name='REMOVEPUNC'),
+    path('EXTRASPACES', views.an_extraspaces, name='EXTRASPACES'),
+    path('WORDSCOUNT', views.an_wordscount, name='WORDSCOUNT'),
+    path('REPLACE', views.an_replace, name='REPLACE'),
 ]
